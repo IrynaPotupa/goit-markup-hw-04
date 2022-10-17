@@ -119,15 +119,17 @@ img {
   gap: 10px;
   align-items: center;
 }
-
+.contacts-icon{
+  fill: currentColor;
+}
 
 .contacts .cnt-link:hover,
 .contacts .cnt-link:focus {
   color: var(--color-brand);
 }
 
-.contacts .cnt-link .contacts-icon:hover,
-.contacts .cnt-link .contacts-icon:focus {
+.contacts .cnt-link:hover .contacts-icon
+.contacts .cnt-link:focus .contacts-icon{
   fill: var(--color-brand);
 }
 
@@ -336,7 +338,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--border-color);
+ color: var(--border-color);
   background-color: var(--main-white-color);
 }
 .net-icon {
@@ -344,12 +346,13 @@ img {
 }
  
 .net-link:hover,
-.net-link:focus {
+.net-link:focus{
   background-color: var(--color-brand);
+  fill: var(--main-white-color);
 }
 
 .net-link:hover .net-icon,
-.net-link:focus .net-icon {
+.net-link:focus .net-icon{
   fill: var(--main-white-color);
 }
 
@@ -381,7 +384,7 @@ img {
   height: 100%;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  color: var(--border-color)
+ color: var(--border-color)
 }
 
 .clients-icon {
@@ -390,7 +393,7 @@ img {
 
 .clients-link:hover,
 .clients-link:focus {
-  color: var(--color-brand);
+  fill: var(--color-brand);
   border-color: var(--color-brand);
 }
 
@@ -467,7 +470,7 @@ address {
 .footer-parts {
 display: flex;
 gap: 70px;
-
+align-items: baseline;
 }
 
 .net-link-footer {
