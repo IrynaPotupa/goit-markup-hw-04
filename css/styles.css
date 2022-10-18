@@ -485,7 +485,7 @@ align-items: baseline;
   }
    
   .net-link-footer:hover,
-  .net-link:focus {
+  .net-link-footer:focus {
     color: var(--main-white-color);
     background-color: var(--color-brand);
   }
